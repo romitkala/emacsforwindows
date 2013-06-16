@@ -3,7 +3,8 @@
 (add-to-list 'load-path "~/.emacs.d/elpa")
 
 (load "customize")
-
+(load-theme 'wombat t)
+ 
 (defvar real-keyboard-keys
   '(("M-<up>"        . "\M-[1;9A")
     ("M-<down>"      . "\M-[1;9B")
