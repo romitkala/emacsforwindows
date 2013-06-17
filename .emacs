@@ -239,3 +239,23 @@ and their terminal equivalents.")
 
 ;; duplicate current line
 (global-set-key (kbd "C-D") 'duplicate-current-line)
+
+
+;; clojure stuff
+;; Midje
+(require 'midje-mode)
+(add-hook 'clojure-mode-hook 'midje-mode)
+
+
+;; windows hack
+
+(setq find-program "C:\\path-to-cygwin\\bin\\find.exe")
+(put 'downcase-region 'disabled nil)
+
+;; Window movement keys: provides quick jumping between many open windows
+(global-set-key (key "M-<left>") 'windmove-left)          ; move to left windnow
+(global-set-key (key "M-<right>") 'windmove-right)        ; move to right window
+(global-set-key (key "M-<up>") 'windmove-up)              ; move to upper window
+(global-set-key (key "M-<down>") 'windmove-down)          ; move to downer window
+
+(setenv "MIDJE_COLORIZE" "true")
