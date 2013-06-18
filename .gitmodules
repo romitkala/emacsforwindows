@@ -64,3 +64,6 @@
 [submodule ".emacs.d/vendor/scala-mode"]
 	path = .emacs.d/vendor/scala-mode
 	url = https://github.com/haxney/scala-mode.git
+[submodule ".emacs.d/vendor/midje-mode"]
+	path = .emacs.d/vendor/midje-mode
+	url = https://github.com/dnaumov/midje-mode.git
