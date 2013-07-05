@@ -4,7 +4,7 @@
 
 (load "customize")
 (load-theme 'wombat t)
- 
+
 (defvar real-keyboard-keys
   '(("M-<up>"        . "\M-[1;9A")
     ("M-<down>"      . "\M-[1;9B")
@@ -259,3 +259,8 @@ and their terminal equivalents.")
 (global-set-key (key "M-<down>") 'windmove-down)          ; move to downer window
 
 (setenv "MIDJE_COLORIZE" "true")
+
+
+;; expand region
+(require 'expand-region)
+(global-set-key (kbd "C-@") 'er/expand-region)
